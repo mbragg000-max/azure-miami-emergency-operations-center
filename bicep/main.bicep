@@ -1,4 +1,3 @@
 // Mimai Emergency Operations Center 
-// Main Bicep deployment file
+// Main Azure infrastructure template
 
-targetScope = 'resourceGroup'
