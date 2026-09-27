@@ -16,14 +16,14 @@ module security './security.bicep' = {
   }
 }
 
-module monitoring './moitoring' = {
+module monitoring './monitoring.bicep' = {
   name: 'eoc-monitoring'
   params: {
     location: location
   }
 }
 
-module disaterRecovery './disaster-recovery.bicep' = {
+module disasterRecovery './disaster-recovery.bicep' = {
   name: 'eoc-disaster-recovery'
   params: {
     location: location

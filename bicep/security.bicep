@@ -1,7 +1,7 @@
 param location string
-param vnetName string = 'eoc-vnet'
 
-resource nsgManagement 'Microsoft.Network/networkSecurityGroup@2024-01-01' = {
+
+resource nsgManagement 'Microsoft.Network/networkSecurityGroups@2024-01-01' = {
   name: 'eoc-management-nsg'
   location: location
 
@@ -33,7 +33,7 @@ resource nsgApplication 'Microsoft.Network/networkSecurityGroups@2024-01-01' = {
       {
         name: 'AllowHTTPS'
         properties: {
-          priortiy: 100
+          priority: 100
           access: 'Allow'
           direction: 'Inbound'
           protocol: 'Tcp'
